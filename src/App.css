@@ -1,0 +1,274 @@
+body {
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  background-color: whitesmoke;
+  padding: 0px;
+}
+
+/*Nav Bar*/
+nav {
+  background-image: url(assets/monstera-8477880_640.jpg);
+  padding: 60px;
+  margin: 0px;
+}
+
+h2 {
+  color: rgb(95, 37, 64);
+  float: left;
+  margin: auto;
+  background-color: moccasin;
+  opacity: 0.9;
+  border: 6px;
+  border-radius: 50px;
+  font-family: sans-serif;
+  font-size: 2em;
+}
+
+.Nav-Bar {
+  color: rgb(124, 10, 48);
+  font-family: Monaco, Verdana, sans-serif;
+  background-color: moccasin;
+  border: 1px;
+  opacity: 0.9;
+  font-size: 1.8em;
+  float: inline-end;
+  margin: 3px;
+}
+
+/*Introduction*/
+#helloname {
+  padding: 0;
+  margin: -3;
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  background-blend-mode: screen;
+  color: #702a36;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Edu NSW ACT Cursive", cursive, sans-serif;
+  font-style: normal;
+}
+
+.employmentstatus {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-grad {
+  background-color: moccasin;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(95, 5, 45);
+  font-weight: 200;
+  box-shadow: 0 0 20px #1d846c;
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #11d821;
+  text-decoration: none;
+}
+
+#professional-profile {
+  text-align: center;
+  line-height: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #F08080;
+}
+
+/*About Me*/
+#Profile {
+  background-image: url(assets/monstera-8477880_640.jpg);
+  opacity: 0.8;
+  padding: 0;
+  margin: 0;
+  background-size: 500px;
+}
+
+#headline {
+  text-align: center;
+  font-family: monaco;
+  color: rgb(124, 10, 48);
+  background-color: moccasin;
+  margin: auto;
+  height: 44px;
+  width: 200px;
+  border: outset;
+  border-color: rgb(93, 50, 180);
+}
+
+#Portfolio-Img {
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  width: 300px;
+}
+
+#paragraph {
+  box-shadow: #1d846c;
+}
+
+#Introduction {
+  background-color: #ffe4b5;
+  box-shadow: #1d846c;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(124, 10, 48);
+  padding: 10px;
+  height: 200px;
+  width: 700px;
+  margin: auto;
+  box-shadow: 0px 0px 20px 10px rgba(22, 150, 118, 0.7);
+}
+
+#abilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+}
+
+.skills {
+  background-color: moccasin;
+  color: rgb(124, 10, 48);
+  font-weight: 900;
+  border: double;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 20px 10px rgba(104, 9, 67, 0.7);
+}
+
+/* Projects Section */
+.projects {
+  padding: 20px;
+  width: 700px;
+  margin: 100px auto;
+}
+
+.projects h2 {
+  text-align: center;
+  margin: 100px;
+  font-size: 2.2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.3rem;
+}
+
+.project-card {
+  background: rgb(169, 151, 61);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  padding: 0 15px 15px;
+  color: #c11690;
+}
+
+.project-card .btn {
+  margin: 0 15px 15px;
+  display: inline-block;
+}
+
+#contactForm {
+  background-image: url(assets/monstera-8477880_640.jpg);
+  opacity: 0.8;
+  padding: 0;
+  margin: 0;
+  background-size: 500px;
+  text-align: center;
+}
+
+#name {
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #eca670;
+}
+
+#email {
+  color: #790777;
+  background-color: #dfa579;
+}
+
+#message {
+  height: 150px;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #dfa579;
+}
+
+.container {
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  background-blend-mode: screen;
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.664);
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media Query */
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+  #abilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .skills {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  #Introduction {
+    width: 90%;
+    height: auto;
+    font-size: 1em;
+  }
+
+  .projects {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  #Portfolio-Img {
+    width: 200px;
+  }
+} 
+
