@@ -1,24 +1,42 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import './App.css'
+import checkinImg from './assets/checkin.webp'
+import italianImg from './assets/Italian.jpeg'
+import weatherappImg from './assets/weatherapp.png'
+import bookstoreImg from './assets/bookstore.png'
+import plantstoreImg from './assets/plantstore.png'
+import portfolioImg from './assets/PortfolioImg.PNG'
 
 const projects = [
   {
     title: "Clinical Check in Form",
     description: "A full-stack online check in form for a Medical Office",
     link: "https://github.com/BrianaSommer/Clinical-Checkin.git",
-    img: "assets/checkin.webp"
+    img: checkinImg
   },
   {
     title: "Favorite Foods",
     description: "HTML in class project of my Favorite Food",
     link: "https://github.com/BrianaSommer/Fav_Food.git",
-    img: "assets/Italian.jpeg"
+    img: italianImg
   },
   {
-    title: "Third Project Coming Soon",
-    description: "Working on it.....",
-    link: "",
-    img: "assets/working.jpg"
+    title: "Weather App",
+    description: "Javascript and DOM",
+    link: "https://github.com/BrianaSommer/Weather-App.git",
+    img: weatherappImg
+  },
+  {
+    title: "Book Store",
+    description: "Javascript",
+    link: "https://github.com/BrianaSommer/Bookstore_Project.git",
+    img: bookstoreImg
+  },
+  {
+    title: "Ecommerce",
+    description: "Plant Store Javascript and React",
+    link: "https://github.com/BrianaSommer/p2t_capstone_template.git",
+    img: plantstoreImg
   }
 ];
 
@@ -83,7 +101,7 @@ function App() {
       <p id="professional-profile"></p>
       <div id="Profile">
         <div className="Box">
-          <img id="Portfolio-Img" src="assets/PortfolioImg.PNG" alt="Portfolio-Img" />
+          <img id="Portfolio-Img" src={portfolioImg} alt="Briana Sommer Portfolio" />
         </div>
         <h1 id="headline">About Me</h1>
         <br />
@@ -115,8 +133,12 @@ function App() {
             <div className="project-card">
               <h3>{projects[currentSlide].title}</h3>
               <p>{projects[currentSlide].description}</p>
-              <a href={projects[currentSlide].link} className="btn">View Project</a>
-              <img src={projects[currentSlide].img} alt="" />
+              {projects[currentSlide].link ? (
+                <a href={projects[currentSlide].link} className="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+              ) : (
+                <button className="btn" disabled>No Link</button>
+              )}
+              <img src={projects[currentSlide].img} alt={projects[currentSlide].title} />
             </div>
           </div>
           <div style={{ textAlign: "center" }}>
@@ -126,7 +148,7 @@ function App() {
         </div>
       </section>
 
-      <form id="contactForm" onSubmit={handleSubmit}>
+      <form id="contact" onSubmit={handleSubmit}>
         <label htmlFor="name"></label>
         <input placeholder="Name" type="text" id="name" name="name" required ref={nameRef} />
         <br />
